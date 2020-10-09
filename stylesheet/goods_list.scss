@@ -1,0 +1,341 @@
+@import "reset";
+@import "comment";
+
+//主体部分
+//左侧边
+//公用边框颜色
+.border-gray{
+  border-color: #e5e5e5 !important;
+}
+.mainBox aside{
+  width: 180px;
+  float: left;
+  border: 1px solid ;
+}
+.mainBox aside h4{
+  padding-left: 10px;
+  margin: 0 0 10px;
+  line-height: 35px;
+  box-sizing: border-box;
+}
+.mainBox .empty-tip{
+  text-align: center;
+  padding: 10px 0 20px;
+  box-sizing: border-box;
+}
+.mainBox aside ul li{
+  padding: 0 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  .imgBox{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 160px;
+    img{
+      line-height: 160px;
+    }
+  }
+  .imgName{
+    height: 36px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    color:#333;
+    &:hover{
+      color: $color;
+    }
+  }
+  .price{
+    height:16px;
+    line-height: 16px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    margin-right: 6px;
+    font-size: 14px;
+    font-weight: 700;    
+  }
+  
+}
+//公共字体颜色
+.text-color{
+  color: #00d7dc !important;
+}
+.bg-gray{
+  background-color: rgba(229, 229, 229, 0.4) !important;
+}
+//中间商品列表
+.pull-left{
+  float: left !important;
+}
+.pull-right{
+  float: right !important;
+}
+//过滤
+.mainBox article{
+  margin-left: 190px;
+  .filter{
+    position: relative;
+    border-top: 1px solid;
+    margin-bottom: 5px;
+    .top{
+      height: 38px;
+      padding: 6px 8px;
+      border-bottom:1px solid;
+      font-size: 12px;
+      box-sizing: border-box;
+    }
+    .f-sort{
+      .active{
+        background-color: $color !important;
+      }
+      float: left;
+      .bg-color{
+        background-color: #fff !important;
+      }
+      a{
+        float: left;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        border: 1px solid;
+        margin-right: -1px;
+        font-size: 12px;
+        span{
+          display: inline-block;
+          font-size: 12px !important;
+          line-height:12px ;
+          color:#333;
+        }
+      }
+    }
+    .f-price{
+      position: relative;
+      float: left;
+      width: 142px;
+      height: 25px;
+      margin-left: 10px;
+      padding-left: 10px;
+      box-sizing:border-box;
+      .price-from{
+        
+        position: absolute;
+        z-index: 5;
+        .form-contorl{
+          width: 60px;
+          height: 25px;
+          padding: 5px 3px;
+          box-sizing: border-box;
+          // border:1px solid #cecece !important;
+          display: inline-block;
+          color:#333;
+          font-size: 13px;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          &:focus{
+            border-color: $color !important;
+          }
+        }
+      }
+      .price-operation{
+        position: absolute;
+        z-index: 3;
+        background: #fff;
+        border: solid 1px ;
+        top:-7px;
+        left:0;
+        width: 130px;
+        height: 25px;
+        padding: 38px 10px 8px 10px;
+        box-sizing: content-box;
+        display: none;
+        a{
+          line-height: 25px;
+          font-size: 12px;
+          color:#333;
+        }
+        .btn{
+          height: 25px;
+          display: inline-block;
+          line-height: 16px;
+          background: #f2f2f2;
+          border:1px solid #bfbfbf;
+          text-shadow: 0 1px 0 #fff;
+          padding: 5px 12px;
+          margin-bottom: 0;
+          text-align: center;
+          box-sizing: border-box;
+          cursor: pointer;
+          &:hover{
+            color:$color !important;
+          }
+        }
+      }
+    }
+  }
+}
+//商品列表
+.mainBox article{
+  .product-list{
+    margin-top:10px;
+    ul .product-item{
+      height: 420px;
+      width: 240px;
+      float: left;
+      padding:12px 6px;
+      position: relative;
+      margin-right: 16px;
+      &:nth-child(4n+4){
+        margin-right: 0;
+      }
+      box-sizing:border-box;
+      border: 1px solid #fff;
+      transition: border-color .1s ease;
+      &:hover{
+        &:hover{
+          box-shadow: 0px 0px 5px #999;
+        }
+      }
+      .imgBox{
+        height: 220px;
+        position: relative;
+        text-align: center;
+        width: 220px;
+        margin:0 auto 5px;
+        a{
+          display: block;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .scrollBox{
+        padding-left: 23px;
+        position: relative;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        span.disabled{
+          background: #fff !important;
+        }
+        .prevBtn{
+          left:0;
+        }
+        .nextBtn{
+          right: 0;
+        }
+        span{
+          position:absolute;
+          width: 20px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+          border:1px solid #e5e5e5;
+          background-color: #e5e5e5 !important;
+          box-sizing: border-box;
+          .iconfont{
+            color:#898989;
+            top:0;
+            font-size: 14px;
+          }
+        }
+        .scrollWrap{
+          height: 30px;
+          position: relative;
+          overflow: hidden;
+          width: 180px;
+          ul{
+            position: absolute;
+            width: 400px;
+            .scrollItem{
+              float: left;
+              width: 36px;
+              text-align: center;
+              box-sizing: border-box;
+              img{
+                cursor: default;
+                display: inline-block;
+                border:1px solid ;
+                width: 30px;
+                height: 30px;
+                box-sizing: border-box;
+                // &:hover{
+                //   border-color: $color !important;
+                // }
+              }
+              .active{
+                border-color: $color !important;
+              }
+              
+            }
+          }
+        }
+        
+      }
+      .p-price{
+        position: relative;
+        line-height: 22px;
+        height: 22px;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 10px 8px 0;
+        font-size: 20px;
+        i{
+          color: #00d7dc !important;
+        }
+      }
+      .p-name{
+        height: 40px;
+        margin-bottom: 0;
+        overflow: hidden;
+        font-size:12px;
+        line-height:20px;
+        a{
+          color:#333;
+          &:hover{
+            color:$color1 !important;
+          }
+        }
+      }
+      .p-icons{
+        overflow: hidden;
+        margin-bottom: 10px;
+        i{
+          background: #e23a3a;
+          color: #fff;
+          border: 1px solid #e23a3a;
+        }
+        .icons{
+          float: left;
+          height: 18px;
+          line-height: 16px;
+          padding: 0 3px;
+          margin-right: 3px;
+          overflow: hidden;
+          text-align: center;
+          font-style: normal;
+          font-size: 12px;
+          cursor: default;
+          border-radius: 2px;
+
+        }
+      }
+      .btnblue{
+        background-color: #00eef3 !important;
+        color: #000 !important;
+        list-style: none;
+        border: 0;
+        height:40px;
+        width: 160px;//
+        margin-left:33px;
+        text-align: center;
+        .iconfont{
+          color: #000 !important;
+        }
+      }
+    }
+  }
+}
