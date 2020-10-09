@@ -22,9 +22,8 @@ require.config({
 
 require(["register_ajax"],
 function(register_ajax){
-  register_ajax.registerSend();
+  // register_ajax.registerSend();
   register_ajax.tab();
-  // register_ajax.test();
-  // register_ajax.test1();
+  register_ajax.tab1();
 
 })

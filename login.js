@@ -22,6 +22,7 @@ require.config({
 
 require(["login_ajax","register_ajax"],
 function(login_ajax,register_ajax){
-  login_ajax.loginSend();
-  register_ajax.tab();
+  // login_ajax.loginSend();
+  login_ajax.tab();
+  login_ajax.tab1();
 })
