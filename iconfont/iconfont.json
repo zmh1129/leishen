@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5591011",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e741",
+      "unicode_decimal": 59201
+    },
+    {
+      "icon_id": "7852904",
+      "name": "播放",
+      "font_class": "shipin",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "12976229",
+      "name": "实箭头 左 left",
+      "font_class": "iconshijiantouright",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "13622876",
+      "name": "实箭头 右 right",
+      "font_class": "shijiantouyou",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "3443559",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
       "icon_id": "4133760",
       "name": "时间 历史记录 计时 钟表 面性",
       "font_class": "shijianlishijilujishizhongbiaomianxing",
